@@ -1,0 +1,5 @@
+1- npx create-mf-app => to initialize micro-frontend project
+
+2- npm install cross-env --save-dev => to solve NODE_ENV=development rspack serve 
+
+3- replace this "start": "NODE_ENV=development rspack serve" with "start": "cross-env NODE_ENV=development rspack serve" (in windows if linux or mac then ignore it)
