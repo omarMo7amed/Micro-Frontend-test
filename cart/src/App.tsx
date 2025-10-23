@@ -1,18 +1,19 @@
 import ReactDOM from "react-dom/client";
-
+import Header from "home/Header";
+import Footer from "home/Footer";
+import "home/styles";
 import "./index.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Home from "./Home";
+
+import CartContent from "./Components/CartContent";
 
 const App = () => (
-  <>
+  <div>
     <Header />
-    <main className="min-h-screen">
-      <Home />
-    </main>
+
+    <CartContent />
+
     <Footer />
-  </>
+  </div>
 );
 
 const root = ReactDOM.createRoot(document.getElementById("app") as HTMLElement);

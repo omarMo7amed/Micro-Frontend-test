@@ -1,5 +1,5 @@
 export const mfConfig = {
-  name: "pdp",
+  name: "login",
   filename: "remoteEntry.js",
   remotes: {
     home: "home@http://localhost:3000/remoteEntry.js",
@@ -7,7 +7,10 @@ export const mfConfig = {
     cart: "cart@http://localhost:3002/remoteEntry.js",
     login: "login@http://localhost:3003/remoteEntry.js",
   },
-  exposes: {},
+  exposes: {
+    "./Login": "./src/app",
+    "./auth": "./src/hooks/auth",
+  },
   shared: {
     react: { singleton: true, requiredVersion: undefined },
     "react-dom": { singleton: true, requiredVersion: undefined },

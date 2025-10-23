@@ -2,21 +2,21 @@ import ReactDOM from "react-dom/client";
 import Header from "home/Header";
 import Footer from "home/Footer";
 import "./index.css";
-import { useState } from "react";
 import "home/styles";
+import ProductContent from "./ProductContent";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 const App = function () {
-  const [state, setState] = useState(0);
   return (
-    <>
+    <BrowserRouter>
       <Header />
       <main className="min-h-screen">
-        Micro front end baaaaaaaaaaby
-        <button onClick={() => setState((state) => state + 1)}>
-          Click:{state}
-        </button>
+        <Routes>
+          <Route path="product/:id" element={<ProductContent />} />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 };
 

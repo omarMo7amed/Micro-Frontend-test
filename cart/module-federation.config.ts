@@ -1,5 +1,5 @@
 export const mfConfig = {
-  name: "pdp",
+  name: "cart",
   filename: "remoteEntry.js",
   remotes: {
     home: "home@http://localhost:3000/remoteEntry.js",

@@ -1,5 +1,5 @@
 {
-  "name": "pdp",
+  "name": "login",
   "version": "0.0.1",
   "scripts": {
     "build": "NODE_ENV=production rspack build",
@@ -26,10 +26,12 @@
   },
   "dependencies": {
     "@module-federation/enhanced": "^0.8.9",
+    "install": "^0.13.0",
     "lucide-react": "^0.546.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.9.4",
+    "rxjs": "^7.8.2",
     "zephyr-rspack-plugin": "^0.0.50"
   }
 }
